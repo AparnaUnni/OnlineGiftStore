@@ -8,7 +8,7 @@ import Link from 'next/link';
 import { useAuth } from '@/contexts/AuthContext';
 import { ArrowLeft, Package, Clock, CheckCircle, XCircle, Truck, Eye } from 'lucide-react';
 
-const API_URL = '${process.env.NEXT_PUBLIC_API_URL}';
+const API_URL = `${process.env.NEXT_PUBLIC_API_URL}`;
 
 const statusColors = {
     pending: 'bg-yellow-100 text-yellow-800',

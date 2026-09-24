@@ -11,7 +11,7 @@ import {
     CheckCircle, Clock, Truck, XCircle, AlertCircle 
 } from 'lucide-react';
 
-const API_URL = '${process.env.NEXT_PUBLIC_API_URL}';
+const API_URL = `${process.env.NEXT_PUBLIC_API_URL}`;
 
 const statusSteps = ['confirmed', 'processing', 'shipped', 'delivered'];
 
