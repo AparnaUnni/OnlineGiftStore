@@ -3,7 +3,7 @@ import CustomLayout from "@/components/CustomLayout";
 
 async function getCategory(type) {
   console.log("calling:", `${process.env.NEXT_PUBLIC_API_URL}/gifts/${type}`);
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/${type}`, {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/gifts/${type}`, {
     cache: "no-store",
   });
   if (!res.ok) return null;
