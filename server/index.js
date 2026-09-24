@@ -91,10 +91,19 @@ const app = express();
 // ==================== MIDDLEWARE ====================
 
 app.use(cors({ 
-    origin: [
-        "http://localhost:3000",
-        "https://online-gift-store.vercel.app"
-    ],
+    origin: function(origin, callback) {
+        const allowedOrigins = [
+            "http://localhost:3000",
+            "https://online-gift-store.vercel.app"
+        ];
+        
+        // Allow any Vercel preview deployment
+        if (!origin || allowedOrigins.includes(origin) || origin.includes("vercel.app")) {
+            callback(null, true);
+        } else {
+            callback(new Error("Not allowed by CORS"));
+        }
+    },
     credentials: true,
 }));
 app.use(express.json());
