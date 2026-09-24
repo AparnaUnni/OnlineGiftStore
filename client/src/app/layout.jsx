@@ -27,6 +27,9 @@ import { AuthProvider } from "@/contexts/AuthContext";
 export const metadata = {
   title: 'Memoria Crafts | Personalized Gifts Dubai UAE',
   description: 'Shop unique personalized and memory gifts delivered across Dubai and UAE. Perfect for birthdays, anniversaries and special moments.',
+  verification: {
+    google: '8xuV5iKBU1KzchjIO5TT0YN4qP7QH8sXiyXf-S2ge7Y',  
+  },
   keywords: 'personalized gifts Dubai, custom memory gifts UAE, thoughtful gifts online UAE, handmade gifts Dubai, birthday gifts UAE, anniversary gifts Dubai',
   icons: {
     icon: '/memoria-logo.png',
