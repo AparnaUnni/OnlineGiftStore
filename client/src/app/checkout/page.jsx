@@ -9,7 +9,7 @@ import { useAuth } from '@/contexts/AuthContext';
 import { useCart } from '@/contexts/CartContext';
 import { ArrowLeft, MapPin, CreditCard, Truck, Check, AlertCircle } from 'lucide-react';
 
-const API_URL = 'http://localhost:4000/api';
+const API_URL = '${process.env.NEXT_PUBLIC_API_URL}';
 
 export default function CheckoutPage() {
     const router = useRouter();
